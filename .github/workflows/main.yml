@@ -27,10 +27,10 @@ jobs:
         run: python ${{ github.workspace }}/cctv.py
         
       #- name: Run weishi
-        run: python ${{ github.workspace }}/weishi.py
+        #run: python ${{ github.workspace }}/weishi.py
         
       #- name: Run qita
-        run: python ${{ github.workspace }}/qita.py
+        #run: python ${{ github.workspace }}/qita.py
         
       - name: 提交更改
         run: |
