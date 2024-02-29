@@ -2,7 +2,7 @@ name: itvlist
 
 on:
   #schedule:
-    #- cron: '0 21 * * *'
+    - cron: '0 21 * * *'
 
 jobs:
   build:
@@ -26,10 +26,10 @@ jobs:
       - name: Run cctv
         run: python ${{ github.workspace }}/cctv.py
         
-      - name: Run weishi
+      #- name: Run weishi
         run: python ${{ github.workspace }}/weishi.py
         
-      - name: Run qita
+      #- name: Run qita
         run: python ${{ github.workspace }}/qita.py
         
       - name: 提交更改
